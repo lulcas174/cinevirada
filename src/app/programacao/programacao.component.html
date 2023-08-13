@@ -1,0 +1,19 @@
+<div class="container" style="margin-bottom: 50px;">
+  <div class="row">
+    <div class="col-12 d-flex justify-content-center mt-3 mb-3">
+      <h1>Programação</h1>
+    </div>
+    <carousel [itemsPerSlide]="itemsPerSlide"
+          [singleSlideOffset]="singleSlideOffset"
+          [startFromIndex]="1"
+          [interval]="0">
+  <slide *ngFor="let slide of slides; let index=index">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+    <div class="carousel-caption">
+      <h4>Slide {{slide.text}}</h4>
+    </div>
+  </slide>
+</carousel>
+  </div>
+  <hr>
+</div>

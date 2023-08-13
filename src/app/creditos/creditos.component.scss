@@ -1,0 +1,16 @@
+.container {
+    margin-top: 50px;
+    
+    .text-box {
+      padding: 20px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30%;
+    }
+}
+
+.column {
+    padding: 20px;
+}

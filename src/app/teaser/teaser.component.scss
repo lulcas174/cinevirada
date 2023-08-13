@@ -1,0 +1,12 @@
+.container {
+    margin-top: 50px;
+    
+    .text-box, .video-box {
+      padding: 20px;
+      border: 1px solid #ccc;
+      min-height: 300px; // For demonstration purposes
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }

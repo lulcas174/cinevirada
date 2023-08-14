@@ -1,19 +1,23 @@
-<div class="container" style="margin-bottom: 50px;">
-  <div class="row">
-    <div class="col-12 d-flex justify-content-center mt-3 mb-3">
-      <h1>Programação</h1>
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center mt-3 mb-3">
+        <h1 style="color: #b8174c;">Programação completa
+        <hr style="border-top: 4px solid  #faf7f7;">
+        </h1>
+      </div>
+      <div class="container-slide col-12">
+        <carousel [pauseOnFocus]="true">
+          <slide *ngFor="let slide of slides; let index=index">
+            <img [src]="slide.image" style="display: block; width: 100%;  border-radius:30px;">
+            <div class="carousel-caption  d-md-block">
+              <h3>{{slide.text}}</h3>
+              <p>{{slide.apresentation_day}}</p>
+            </div>
+          </slide>
+        </carousel>
+      </div>
+   
     </div>
-    <carousel [itemsPerSlide]="itemsPerSlide"
-          [singleSlideOffset]="singleSlideOffset"
-          [startFromIndex]="1"
-          [interval]="0">
-  <slide *ngFor="let slide of slides; let index=index">
-    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
-    <div class="carousel-caption">
-      <h4>Slide {{slide.text}}</h4>
-    </div>
-  </slide>
-</carousel>
   </div>
-  <hr>
 </div>

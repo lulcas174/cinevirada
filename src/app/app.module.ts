@@ -10,6 +10,8 @@ import { ProgramacaoComponent } from './programacao/programacao.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { FormsModule } from '@angular/forms';
 import { CreditosComponent } from './creditos/creditos.component';
+import { BsModalService } from 'ngx-bootstrap/modal';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { CreditosComponent } from './creditos/creditos.component';
     TeaserComponent,
     ProgramacaoComponent,
     CreditosComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,7 @@ import { CreditosComponent } from './creditos/creditos.component';
     CarouselModule.forRoot(),
     FormsModule
   ],
-  providers: [],
+  providers: [BsModalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

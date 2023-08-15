@@ -8,7 +8,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 	templateUrl: './programacao.component.html',
 	styleUrls: ['./programacao.component.scss'],
 	providers: [
-		{ provide: CarouselConfig, useValue: { startFromIndex: 0, interval: 1500, noPause: true, noWrap: false, showIndicators: true, isAnimated: true, singleSlideOffset: true } }
+		{ provide: CarouselConfig, useValue: { startFromIndex: 0, interval: 3000, noPause: true, noWrap: false, showIndicators: true, isAnimated: true, singleSlideOffset: true } }
 	]
 })
 export class ProgramacaoComponent implements OnInit {

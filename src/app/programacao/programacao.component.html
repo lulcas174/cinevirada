@@ -6,11 +6,11 @@
         <hr style="border-top: 4px solid  #faf7f7;">
         </h1>
       </div>
-      <div class="container-slide col-12">
+      <div class="container-slide col-12 center-slide">
         <carousel [pauseOnFocus]="true">
           <slide *ngFor="let slide of slides; let index=index">
-            <img [src]="slide.image" style="display: block; width: 100%;  border-radius:30px;">
-            <div class="carousel-caption  d-md-block">
+            <img [src]="slide.image"style="display: block; width: 100%;  border-radius:30px;">
+            <div class="carousel-caption  d-md-block"  style="max-width: 100%; text-align: center;">
               <h3>{{slide.text}}</h3>
               <p>{{slide.apresentation_day}}</p>
             </div>

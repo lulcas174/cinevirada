@@ -1,4 +1,4 @@
-.container{
+container-slide.container{
     min-height: 400px;
   }
 .section {
@@ -11,5 +11,10 @@
 .container-slide{
    margin-bottom: 5em;
    border: none;
-    border-radius: 10px;
+  border-radius: 10px;
+}
+.center-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

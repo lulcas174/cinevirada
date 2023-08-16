@@ -1,35 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TabsModule } from 'ngx-bootstrap/tabs';
-import { NavComponent } from './nav/nav.component';
-import { TeaserComponent } from './teaser/teaser.component';
-import { ProgramacaoComponent } from './programacao/programacao.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { FormsModule } from '@angular/forms';
-import { CreditosComponent } from './creditos/creditos.component';
-import { BsModalService } from 'ngx-bootstrap/modal';
-import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent,
-    TeaserComponent,
-    ProgramacaoComponent,
-    CreditosComponent,
-    FooterComponent,
+    LayoutComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    TabsModule.forRoot(),
-    CarouselModule.forRoot(),
-    FormsModule
+    AppRoutingModule,
   ],
-  providers: [BsModalService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

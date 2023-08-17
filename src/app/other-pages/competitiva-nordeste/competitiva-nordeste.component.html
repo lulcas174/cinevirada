@@ -1,0 +1,391 @@
+<app-nav></app-nav>
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="titulos-font" style="color: #49233b;">Competitiva
+                    Nordeste</h1>
+                <h4 class="titulos-font"
+                    style="font-weight: bold; font-size: 40px; color: #49233b;">Sessão
+                    1</h4>
+                <p class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">CineÁridos</p>
+            </div>
+
+            <div class="col-6 container-autor">
+                <p style="font-size: 2rem; color: #49233b; font-weight: bold;"
+                    class="outros-textos-font">Por Stephanie Costa</p>
+            </div>
+
+            <div class="col-6 container-data-liberacao">
+                <span class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">LIBERADO
+                    ONLINE
+                    EM <p>
+                        22/08 às 21h
+                    </p></span>
+            </div>
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo"
+                    style="font-weight: bold; font-size: 20px; color: #49233b;">
+                    O CineÁridos é toda produção que nos seca a boca e que nos
+                    transborda. Ao se desprender das regras
+                    impostas por um cinema estrangeiro, patriarcal e elitista,
+                    precisamos labutamos apenas com o que
+                    temos à
+                    mão, uma câmera e muita ideia na cabeça....
+                </p>
+            </div>
+            <div class="container-buton-modal mb-3">
+                <button class="btn btn-outline-secondary botao-customizavel"
+                    (click)="openModal(template, 1)">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao1]="listaObjFilmesSessao1"></app-cards-filmes>
+</div>
+
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="titulos-font"
+                    style="font-weight: bold; font-size: 40px; margin-top: 30px; color: #49233b;">Sessão
+                    2</h4>
+                <p class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">O
+                    eco da
+                    vida-liberdade</p>
+            </div>
+
+            <div class="col-6 container-autor">
+                <p style="font-size: 2rem; color: #49233b;">Por Bagdá Sakugawa</p>
+            </div>
+
+            <div class="col-6 container-data-liberacao">
+                <span class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">LIBERADO
+                    ONLINE
+                    EM <p>
+                        23/08 às 21h
+                    </p></span>
+            </div>
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo"
+                    style="font-weight: bold; font-size: 20px; color: #49233b;">
+                    O grito reverberante da resistência ressoa na tela-holofote
+                    com a segunda sessão da Mostra
+                    Competitiva Nordeste, "o eco da vida-liberdade", alumiando o
+                    suor, a súplica pelos olhares de
+                    (re)conhecimento de uma história que deve, e batalha, para
+                    ser transgredida e escutada.
+                </p>
+            </div>
+            <div class="container-buton-modal mb-3">
+                <button class="btn btn-outline-secondary botao-customizavel"
+                    (click)="openModal(template, 2)">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao2]="listaObjFilmesSessao2"></app-cards-filmes>
+</div>
+
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="titulos-font"
+                    style="font-weight: bold; font-size: 40px; margin-top: 30px; color: #49233b;">Sessão
+                    3</h4>
+                <p class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">Partir,
+                    voltar e
+                    repartir</p>
+            </div>
+
+            <div class="col-6 container-autor">
+                <p style="font-size: 2rem; color: #49233b;">Por Marcela Dias</p>
+            </div>
+
+            <div class="col-6 container-data-liberacao">
+                <span class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">LIBERADO
+                    ONLINE
+                    EM <p>
+                        24/08 às 21h
+                    </p></span>
+            </div>
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo"
+                    style="font-weight: bold; font-size: 20px; color: #49233b;">
+                    Ligando sirenes internas para alertar da urgência de se
+                    observar e apreciar quão importante é a impermanência do
+                    "nós" no aqui e agora induz a pensar que o efêmero é
+                    transformação, enxergando finais para além do lamento. É
+                    aceitar a naturalidade de que tudo é ciclo. Início, meio e
+                    fim. Partida e chegada. Ascendência e descendência. Assim
+                    como é a vida, a arte também.
+                </p>
+            </div>
+            <div class="container-buton-modal mb-3">
+                <button class="btn btn-outline-secondary botao-customizavel"
+                    (click)="openModal(template, 3)">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #template>
+    <div class="container-modal" *ngIf="sessao_numero == 1">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Primeira sessão</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                Começamos a sessão com um reality show dentro de um restaurante
+                universitário, com três participantes que estão disputando a
+                grande final. Luz, Câmera, Ocupação (2022), dirigido por Erre
+                Martin, é um filme que busca denunciar a negligência do poder
+                público em relação à educação do país. Por isso, esse filme
+                ocupa o primeiro lugar dessa sessão, como forma de resistência a
+                qualquer tipo de opressão e para lembrar que o CAHL não tem nem
+                a estrutura de um RU.
+            </p>
+            <p>
+                Longe das luzes de um reality show, o documentário Invasão ou
+                Contatos Imediatos do 3º Mundo (2023), dirigido por Hugo Aquino
+                e Maria Gazal, busca ouvir, da população de pernambucana, a
+                opinião sobre invasões alienígenas, em paralelo à ocupação do
+                MUST (Movimento Urbano Dos Trabalhadores Sem Teto). Segundo o
+                Ipea¹, durante a pandemia a população em situação de rua cresceu
+                38%. Por isso, esse filme racha a nossa pele e abre a ferida do
+                nosso país.
+            </p>
+            <p>
+                Para nos transbordar, o documentário ANARRIÊ (2023) nos leva de
+                volta ao mês de junho, nos apresenta a correria dos dançarinos,
+                o brilho e a alegria das festas juninas. Renan e Alana se
+                preparam para o evento mais esperado do ano, as apresentações
+                das quadrilhas de São João. Enquanto nós, espectadores, somos
+                fisgados em um giro de saudade.
+            </p>
+            <p>
+                Um casal de caçadores está sedento por mais um monstro e eles
+                não vão desistir enquanto não conseguirem a recompensa, porque a
+                Central Tocaia (2023) atende todo tipo de monstruosidade. Está
+                mostruosidade que muitas vezes nos seca o sangué, pode ter sua
+                sorte mudada quando há a possibilidade de recriar um mundo. Pela
+                ideia de recriar e reinventar que este é o quarto filme dessa
+                sessão.
+
+            </p>
+            <p>
+                Em Crimes Holandeses (2022), uma professora que teve um péssimo
+                dia no trabalho, toma um remédio e só acorda no dia seguinte. Um
+                mistério em torno de uma pessoa morta próximo onde ela mora
+                ocupa a sua mente, a ponto de pensar que ela mesmo cometeu o
+                crime. Um suspense de secar a boca e buscar por mais água, na
+                tentativa de compreender como aquele corpo foi parar alí.
+
+            </p>
+            <p>
+
+                Finalizamos a sessão com o documentário Influência (2021), que
+                expõe como Facebook foi utilizado como forma de manipulação
+                favorecendo a eleição de Donald Trump nos EUA e de Bolsonaro no
+                Brasil. Através de um artifício simples e muita ideia na cabeça,
+                Otavio Conceição e Stephanie Sobral conseguem expor o Facebook e
+                Whatsapp como as principais formas de disseminação de notícias
+                falsas. Esse filme fecha a nossa sessão expondo as rachaduras de
+                um desgoverno que negligenciou tudo que é básico.
+
+            </p>
+            <p>
+                Se muitas vezes, como solo, não produzimos na seca e abrimos
+                rachaduras, outrora somos toró, nos derramamos por inteiro. Se
+                por vezes somos labuta, somos suor, há tempo que somos fartura.
+                Por saber se recriar, se reinventar, se refazer é que estamos
+                resistindo no audiovisual brasileiro e continuaremos.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="container-modal" *ngIf="sessao_numero == 2">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Segunda sessão</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                ZUMBI (2023), dirigido por Tiago Sales, inicia a sessão com o
+                desejo de trazer visibilidade à tradição da pesca dentro do
+                município de Rio do Fogo no litoral norte do estado do Rio
+                Grande do Norte. Os pescadores são acompanhados quase de forma
+                contemplativa enquanto pessoas-personagens efervescentes em suas
+                memórias, trazendo denúncias em cada gesto, a devoção ao
+                trabalho e como ele se insere de modo inextricável em suas
+                vidas.
+
+            </p>
+            <p>
+                Nos campos vastos e férteis em um acampamento do Movimento Rural
+                Sem Terra (MST) em Ceará-Mirim no estado do Rio Grande do Norte,
+                um corpo político-performático floresce em JENIFFER (2023),
+                dirigido por Matheus Mendes. Jeniffer Rocha, uma mulher trans,
+                preta, agricultora e sem-terra discorre sobre sua trajetória
+                atravessada por inúmeras questões que constituem sua identidade,
+                seu enfrentamento direto à elas em busca de uma vida digna, e
+                como seu contato com a terra implica no intrínseco do seu
+                existir, paralelamente ao seu resgate ancestral e territorial.
+
+            </p>
+            <p>
+                Consagrando a onipresença do sagrado dentro do território
+                brasileiro, ENCRUZILHADA DO SOM (2023), dirigido por Edigar
+                Martins; com a dinâmica documental de entrevistas alternadas
+                entre quatro umbandistas de Fortaleza, reivindica o encantado da
+                música e suas diversidades sonoras, em consonância à sua atuação
+                indeclinável dentro da Umbanda, como uma unidade necessária para
+                a transcendência e manutenção da tradição religiosa.
+
+            </p>
+            <p>
+                Na refração da luz causada pela subjetividade do pessoa-espelho
+                transitando descalça em paralelepípedos tombados, fragmentados,
+                históricos de Cachoeira; fechamos a sessão com SÓ EXISTE CAMINHO
+                QUANDO HÁ SENTIDO (2020-2023), conceito e performance de Adu
+                Santos e captação por Cristal Saldanha. Em caráter
+                filme-ensaístico-performático, o deslocamento desse corpo
+                refletor fomenta reflexões pautadas na existência dentro do
+                território em uma experiência que não segrega vida de espaço
+                habitado, confluindo em uma completude investigativa sobre
+                possibilidades de caminhadas e caminhos.
+
+            </p>
+            <p>
+                No limiar desse trajeto traçado pela imersão audiovisual da
+                sessão "o eco da vida-liberdade", projetamos a ideia de que
+                cria-se livre, alcança-se a liberdade quando o cinema é queixa,
+                é provocação, é instrumento de transformação; desde o micro à
+                transgressão da história desse macro, que há de ser
+                transpassado, nas palavras de Conceição Evaristo, ontem - hoje -
+                e agora.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="container-modal" *ngIf="sessao_numero == 3">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Terceira sessão</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                Entitulada com a citação-mantra que se repete no refrão de
+                "É tudo para ontem" de Emicida e Gilberto Gil, a terceira
+                sessão: "Partir, voltar e repartir" da competitiva Nordeste traz
+                cinco filmes que se aproximam dessa reflexão do existir do eu e
+                do nós de diferentes formas, trazendo o poder da intimidade de
+                relações ancestrais, sanguíneas, afetivas e sociais que por mais
+                que sejam ora paralelas, ora simultâneas, são sempre dilatadas
+                ou não pelo único senhor que nos traz e nos leva daqui: o Tempo.
+            </p>
+            <p>
+                O filme "As Velas do Monte Castelo" (2022) dirigido por Lanna
+                Carvalho, é o pontapé inicial mais propício a sessão. Em meio a
+                um dia qualquer da tão desconfortável, por um tempo cotidiana e
+                não tão distante quarentena na pandemia do Covid 19, imergimos
+                em um contraste caloroso do convívio íntimo e singelo de uma
+                família que exprime afago, nos aproximando e nos mostrando a
+                importância da existência daquele agora para que a esperança da
+                possibilidade de um depois se mantenha tão acesa quanto as velas
+                daquele lar.
+            </p>
+            <p>
+                Logo em seguida, o caminho se perpetua em uma telinha mais
+                estreita em "Do Tanto de Telha no Mundo" (2022). A direção de
+                Bruno Brasileiro abraça o desconforto doloroso da distância
+                geográfica iminente entre um filho e uma mãe. Com cuidado,
+                sutileza, meiguice e um lindo e perfeitamente dosado toque de
+                poesia nos é mostrado porque partir em busca de um futuro melhor
+                é tão mais delicado quando é a profundidade afetiva da relação
+                principal da narrativa que torna difícil estar distante, assim
+                como é exatamente por isso que o até breve é tão importante.
+            </p>
+            <p>
+                Após a mansidão densa, o doc "Trançatlânticas" (2023), de
+                Isabela Leite nos traz um pitada de frenesi, o tempero da
+                ferocidade. Cinco mulheres trancistas falam de suas profissões
+                para muito além do empoderamento econômico e da manifestação
+                artística, mas trazendo também a dimensão ancestral da
+                representação identitária que o trancismo carrega para o povo
+                preto. Em um mergulho no passado, explora-se muito da diáspora
+                hoje. Reafirma-se a importância de quem ascende e descende como
+                resistência e estreita laços já historicamente firmes. É o
+                repartir, o reencontro e o resistir.
+
+            </p>
+            <p>
+
+                Em "Anjos Cingidos" (2022), animação dirigida por Laércio Filho
+                e Maria Tereza de Azevedo, experimentamos o agridoce do partir
+                para o voltar. Uma senhora parteira conta a história das perdas
+                seguidas de uma das tantas famílias do sertão nordestino do
+                início do século XX vítimas da alta taxa de mortalidade
+                infantil. Com uma narrativa emocionante cheia de perdas
+                precoces, nos deparamos com um final esperançoso de volta, onde
+                a senhora mostra que a dor também lhe trouxe amor.
+
+            </p>
+            <p>
+                A sessão três completa sua rotação com o curta tão sensível
+                "Será que as casas também sentem saudade?" (2023) de Leandro
+                Machado, onde ele nos convida a entrar numa casa que
+                recentemente perdeu seus moradores e a questão do título não só
+                humaniza a casa como mostra o ponto de tanto sentir. As
+                lembranças, a solidão e a saudade são a tríade de seu luto, mas
+                é só por isso que é possível humanizá-la. Com um texto tão
+                impactante e um passeio a esquinas de móveis e paredes cheias de
+                memória, a falta é, linda e indiscutivelmente, inevitável.
+            </p>
+            <p>
+                No trajeto do fenômeno cíclico que cerca tudo o que é vivo, essa
+                seleção de filmes da sessão três mostra como o audiovisual
+                também é cinesia. Tem origem e destino. E o transformar desse
+                ciclo gera outros e esses outros, geram tantos outros. Afinal, o
+                poder está no ponto de vista, da vida e de vivência de quem a
+                sétima arte pode, deve e vai alcançar.
+
+            </p>
+        </div>
+    </div>
+</ng-template>
+
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao3]="listaObjFilmesSessao3"></app-cards-filmes>
+</div>
+
+<app-footer></app-footer>

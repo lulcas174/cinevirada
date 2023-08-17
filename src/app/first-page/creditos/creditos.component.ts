@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
 import { DeviceDetectorService } from 'ngx-device-detector';
+import { ButtonStyleModule } from 'src/app/shared/button-style/button-style.module';
 
 @Component({
   selector: 'app-creditos',

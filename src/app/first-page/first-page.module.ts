@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
-import { BsModalService } from 'ngx-bootstrap/modal';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ButtonStyleModule } from '../shared/button-style/button-style.module';
+import { CardFilmesModule } from '../shared/cards-filmes/card-filmes.module';
 import { FooterModule } from '../shared/footer/footer.module';
 import { NavModule } from '../shared/nav/nav.module';
 import { CreditosComponent } from './creditos/creditos.component';
@@ -31,8 +31,7 @@ import { TeaserComponent } from './teaser/teaser.component';
     FormsModule,
     FooterModule,
     NavModule,
-    ButtonStyleModule
+    ButtonStyleModule,    
   ],
-  providers: [BsModalService],
 })
 export class FirstPageModule { }

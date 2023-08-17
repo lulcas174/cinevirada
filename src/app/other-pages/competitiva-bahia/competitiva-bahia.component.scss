@@ -1,0 +1,58 @@
+.section-web{
+    background: url('../../../assets/images/banners-3.png') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+.cor-texto-purple {
+    font-weight: bold;
+    color: #49233b;
+}
+.section-web-2{
+    background: url('../../../assets/images/banners-3.png') no-repeat center center fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.container-data-liberacao{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+.container-autor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragrafo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.18px;
+    text-align: justify;
+}
+.container-buton-modal {
+    display: flex;
+    justify-content: flex-end;
+}
+.botao-customizavel {
+    outline: #000 solid 1px;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.botao-customizavel:hover {
+    background-color: #49233b;
+    color: #fff;
+}

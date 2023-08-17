@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row" style="display: flex; align-items: center; justify-content: center;">
       <div class="col-12 d-flex justify-content-center mt-3 mb-3">
-        <h1 style="color: #b8174c;">Sessões
+        <h1 class="titulos-font" style="color: #582B48;">Sessões
         <hr style="border-top: 4px solid  #faf7f7;">
         </h1>
       </div>
@@ -11,9 +11,8 @@
           <slide *ngFor="let slide of slides; let index=index">
              <a [routerLink]="[slide.route]">
               <img [src]="slide.image" style="display: block; width: 100%; border-radius: 30px;">
-              <div class="carousel-caption d-md-block" style="max-width: 100%; text-align: center;">
+              <div class="carousel-caption" style="max-width: 100%; text-align: center; margin-left:3%;">
                 <h3>{{slide.text}}</h3>
-                <p>{{slide.apresentation_day}}</p>
               </div>
             </a>
           </slide>

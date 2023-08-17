@@ -8,19 +8,16 @@ import { DeviceDetectorService } from 'ngx-device-detector';
 	templateUrl: './programacao.component.html',
 	styleUrls: ['./programacao.component.scss'],
 	providers: [
-		{ provide: CarouselConfig, useValue: { startFromIndex: 0, interval: 3000, noPause: true, noWrap: false, showIndicators: true, isAnimated: true, singleSlideOffset: true } }
+		{ provide: CarouselConfig, useValue: { startFromIndex: 0, interval: 4000, noPause: true, noWrap: false, showIndicators: true, isAnimated: true, singleSlideOffset: true }}
 	]
 })
 export class ProgramacaoComponent implements OnInit {
 	slides = [
-		{ image: 'assets/images/bloco-preto.png', text: 'Competição Bahia', apresentation_day: "25/09", route: '/' },
-		{ image: 'assets/images/bloco-amarelo.png', text: 'Competição SP', apresentation_day: "26/09", route: '/' },
-		{ image: 'assets/images/bloco-verde.png', text: 'Competição Pernambuco', apresentation_day: "27/09", route: '/' },
-		{ image: 'assets/images/bloco-azul.png', text: 'Competição Texas', apresentation_day: "28/09", route: '/' },
-		{ image: 'assets/images/bloco-rosa.png', text: 'Competição Irlanda', apresentation_day: "29/09", route: '/' },
+		{ image: 'assets/images/carrossel-1.png', text: 'Clique aqui e veja', route: '/competitiva-bahia'},
+		{ image: 'assets/images/carrossel-2.png', text: 'Clique aqui e veja', route: '/competitiva-nordeste'},
+		{ image: 'assets/images/carrossel-3.png', text: 'Clique aqui e veja', route: '/cineviradinha' },
 	  ];
 	  
-
 	itemsPerSlide = 3;
 	singleSlideOffset = true;
 	isMobile = false;

@@ -1,0 +1,120 @@
+<app-nav></app-nav>
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="titulos-font cor-texto-purple">Sessão CineViradinha
+                </h1>
+                <p class="outros-textos-font cor-texto-purple"
+                    style="font-weight: bold; font-size: 30px;">Parceria com a
+                    Mostra ManduCa (e CineCecult)</p>
+            </div>
+
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo cor-texto-purple"
+                    style="font-weight: bold; font-size: 20px;">
+                    Partindo de uma pré-seleção de filmes que já passaram pelas
+                    quatro edições da Mostra
+                    ManduCa e que condizem com a proposta do CineVirada - a
+                    saber, filmes produzidos por
+                    universitários - em parceria com o CineCecult, a curadoria
+                    se afunila em temáticas como:
+                    memória, imaginação e identidade, temáticas centrais das
+                    últimas edições da ManduCa e que
+                    são aspectos fundamentais do desenvolvimento humano,
+                    especialmente na infância.
+                </p>
+            </div>
+            <div class="container-buton-modal mb-3">
+                <button class="btn btn-outline-secondary botao-customizavel"
+                    (click)="openModal(template, 1)">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao1]="listaObjFilmesSessao1"></app-cards-filmes>
+</div>
+
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <h1 class="titulos-font cor-texto-purple">Sessão petianes</h1>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao2]="listaObjFilmesSessao2"></app-cards-filmes>
+</div>
+
+<ng-template #template>
+    <div class="container-modal" *ngIf="sessao_numero == 1">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">CineViradinha</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                Iniciamos nossa sessão com Dando Asas à Imaginação, onde
+                Carlinhos, Carol e
+                Quindin nos guiam em uma contação de histórias, dentro da
+                escola, abrindo a discussão sobre
+                imaginar e criar em coletivo, histórias que fazem sentido pra
+                quem conta e prendem a atenção
+                de quem escuta.
+            </p>
+            <p>
+                Partindo em seguida para Cores e Botas, no qual acompanhamos o
+                sonho de
+                Joana, comum a muitas meninas dos anos 80, de ser Paquita. Joana
+                é uma menina negra, e
+                enfrenta preconceitos na busca por um lugar de visibilidade e
+                realização.
+            </p>
+            <p>Em seguida nos
+                encontramos com Ewé de Òsányìn: o segredo das folhas, uma
+                animação que narra a busca
+                pela identidade de uma criança que nasce com folhas em seu
+                corpo, e foge por ser diferente
+                mas se aventura na mata em um processo de autoconhecimento até
+                Òsányìn, o Orisà das
+                folhas.</p>
+            <p>
+                Nos levando a Um Lugar Comum, mais uma animação que explora as
+                fases e o
+                despertar da vida. Numa perspectiva circular, voltando sempre ao
+                mesmo lugar, iniciamos
+                com uma criança e uma senhora, percorremos o crescimento desse
+                jovem, que conhece uma
+                menina e juntos plantam uma árvore, o símbolo da amizade,
+                acompanhando o crescimento,
+                encontros e desencontros.
+            </p>
+            <p>
+                Por fim, encerra a sessão Oro mimá e sua narrativa musical
+                trazendo a diversão de ser criança, aprender em comunidade e
+                imaginar em coletivo.
+            </p>
+            <p>
+                Iniciamos criando histórias e encerramos com a experiência boa
+                de ser criança,
+                juntando as experiências, histórias que passam por gerações e o
+                passado coletivo, onde as
+                crianças criam novas possibilidades e expressam sentimentos,
+                reconhecendo valores e
+                diferenças, e se relacionam com o mundo.
+            </p>
+        </div>
+    </div>
+</ng-template>
+<app-footer></app-footer>

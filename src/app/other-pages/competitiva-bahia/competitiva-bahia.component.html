@@ -1,0 +1,453 @@
+<app-nav></app-nav>
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="titulos-font cor-texto-purple">Competitiva Bahia</h1>
+                <h4 class="titulos-font cor-texto-purple"
+                    style="font-weight: bold; font-size: 40px;">Sessão 1</h4>
+                <p class="outros-textos-font cor-texto-purple"
+                    style="font-weight: bold; font-size: 30px;">Forjar os
+                    caminhos (ou todos os caminhos levam ao cinema)</p>
+            </div>
+
+            <div class="col-6 container-autor">
+                <p style="font-size: 2rem;"
+                    class="cor-texto-purple outros-textos-font">Por Luan Santos</p>
+            </div>
+
+            <div class="col-6 container-data-liberacao">
+                <span class="outros-textos-font cor-texto-purple"
+                    style="font-weight: bold; font-size: 30px;">LIBERADO ONLINE
+                    EM <p>
+                        22/08 às 21h
+                    </p></span>
+            </div>
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo cor-texto-purple"
+                    style="font-weight: bold; font-size: 20px;">
+                    A segunda sessão da competitiva Bahia do X CineVirada,
+                    chamada “Retorno do passado/Perspectivas de futuros”, traz
+                    filmes com narrativas que revisitam o passado com o anseio
+                    de construir um futuro mais otimista.
+                </p>
+                <div class="container-buton-modal mb-3">
+                    <button class="btn btn-outline-secondary botao-customizavel"
+                        (click)="openModal(template, 1)">
+                        Ver mais
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao1]="listaObjFilmesSessao1"></app-cards-filmes>
+</div>
+
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="titulos-font"
+                    style="font-weight: bold; font-size: 40px; margin-top: 30px; color: #49233b;">Sessão
+                    2</h4>
+                <p class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">ORetorno
+                    do passado/Perspectivas de futuros</p>
+            </div>
+
+            <div class="col-6 container-autor">
+                <p style="font-size: 2rem; color: #49233b;">Por Letícia Cristina</p>
+            </div>
+
+            <div class="col-6 container-data-liberacao">
+                <span class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">LIBERADO
+                    ONLINE
+                    EM <p>
+                        23/08 às 21h
+                    </p></span>
+            </div>
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo"
+                    style="font-weight: bold; font-size: 20px; color: #49233b;">
+                    O grito reverberante da resistência ressoa na tela-holofote
+                    com a segunda sessão da Mostra
+                    Competitiva Nordeste, "o eco da vida-liberdade", alumiando o
+                    suor, a súplica pelos olhares de
+                    (re)conhecimento de uma história que deve, e batalha, para
+                    ser transgredida e escutada.
+                </p>
+            </div>
+            <div class="container-buton-modal mb-3">
+                <button class="btn btn-outline-secondary botao-customizavel"
+                    (click)="openModal(template, 2)">
+                    Ver mais
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao2]="listaObjFilmesSessao2"></app-cards-filmes>
+</div>
+
+<div class="section-web">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="titulos-font"
+                    style="font-weight: bold; font-size: 40px; margin-top: 30px; color: #49233b;">Sessão
+                    3</h4>
+                <p class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">Além
+                    das margens: Transcendências Subjetivas e essências plurais
+                </p>
+            </div>
+
+            <div class="col-6 container-autor">
+                <p style="font-size: 2rem; color: #49233b;">Por Mapa Macedo</p>
+            </div>
+
+            <div class="col-6 container-data-liberacao">
+                <span class="outros-textos-font"
+                    style="font-weight: bold; font-size: 30px; color: #49233b;">LIBERADO
+                    ONLINE
+                    EM <p>
+                        24/08 às 21h
+                    </p></span>
+            </div>
+            <div class="col-12">
+                <p class="outros-textos-font paragrafo"
+                    style="font-weight: bold; font-size: 20px; color: #49233b;">
+                    Nos convidando a enxergar, tocar e mergulhar além das
+                    margens do sentir, a terceira sessão da mostra Competitiva
+                    Bahia adentra mundos e mares de subjetividades, vivências
+                    individuais e plurais carregadas pelos nossos corpos e
+                    estruturas. Como carregar a liberdade do meu próprio ser no
+                    mundo?
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="section-web-2">
+    <app-cards-filmes [filmesSessao3]="listaObjFilmesSessao3"></app-cards-filmes>
+</div>
+
+<ng-template #template>
+    <div class="container-modal" *ngIf="sessao_numero == 1">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Primeira sessão</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>
+                O primeiro filme desta sessão, daqui pra li, de lá pra cá (2022,
+                wellison silva), elabora como dispositivo para sua construção
+                narrativa
+                o percurso percorrido por Milla Langídíla entre as cidades irmãs
+                de
+                Cachoeira e São Félix (BA). O caminhar sob a ponte de ferro que
+                liga
+                as
+                duas cidades marca a paisagem do trajeto realizado por Welisson
+                e
+                Milla,
+                onde a personagem compartilha de suas vivências morando em São
+                Félix
+                e
+                trabalhando/estudando em Cachoeira. Atravessar a ponte não
+                significa
+                apenas ir para outra cidade, mas contemplar o rio Paraguassu que
+                liga as
+                duas cidades. E esse trânsito entre estas duas pessoas mobiliza
+                não
+                somente a experiência individual da entrevistada, mas a
+                pluralidade
+                dessa experiência entre pessoas que habitam esses territórios.
+                Alternando entre imagens estáticas da ponte e uma câmera na mão
+                que
+                registra o percurso de Milla, a montagem reúne uma série de
+                sonoridades
+                urbanas e sons que se atravessam nesse trajeto: o soprar do
+                vento, a
+                calmaria das águas, os rangidos estridentes da ponte de ferro,
+                os
+                passos
+                das pessoas. Ao propor um dispositivo de conversa que se dá
+                durante
+                o
+                trajeto de travessia da ponte, Welisson se coloca também
+                enquanto
+                personagem de sua narrativa, com sua voz constantemente
+                indagando e
+                reagindo aos relatos de Milla. O essencial da conversa entre
+                Milla e
+                Welisson não é exatamente o lugar que se vai chegar ao fim do
+                caminho,
+                mas o próprio caminhar enquanto constituição da linguagem
+                fílmica.
+            </p>
+
+            <p>
+                Em Caminhos que levam a moça da reforma (2023, Ailana Rocha),
+                somos
+                apresentados à história de Iasmin Santana, moradora da cidade de
+                Cachoeira. Iasmin relata os conflitos e dificuldades que
+                enfrenta na
+                profissão de “faz-tudo”, considerada pela sociedade como um
+                “trabalho de
+                homem”. Em sua caminhada, Iasmin enfrentou situações machistas
+                para
+                realizar sua profissão, mas encontrou forças espirituais que lhe
+                possibilitaram continuar trilhando seu caminho. Devota ao orixá
+                Exú,
+                conhecido como orixá da comunicação e da abertura de caminhos,
+                Iasmin se
+                dedica a atender o público formado por mulheres e LGBTs nas
+                cidades
+                do
+                Recôncavo e agora é conhecida popularmente como “Moça da
+                reforma”. A
+                narrativa do documentário é construída principalmente na
+                entrevista
+                com
+                a Iasmin, onde a câmera permanece fixa e a montagem utiliza
+                poucas
+                variações de imagens. Apesar da movimentação e do caminhar que
+                sugere o
+                título, a obra acaba utilizando uma linguagem mais fixa e inerte
+                do
+                cinema documental clássico.
+            </p>
+            <p>
+                Percorrendo os espaços urbanos de Salvador/BA, o curta-metragem
+                Rema
+                (2023, Gabriela Ferrari) aborda a perspectiva dos artistas
+                urbanos
+                que
+                vivem de sua arte nas ruas da cidade. Através de uma personagem
+                skatista
+                como dispositivo de movimentação e ligação entre os diversos
+                pontos
+                da
+                cidade, a narrativa tece uma cartografia de diferentes práticas
+                artísticas: malabarismo, performance com bambolê, grafite e
+                artes
+                visuais. Com entrevistas em off, o filme nos apresenta as vozes
+                de
+                cada
+                pessoa contando as dores e as delícias de fazer arte de rua
+                enquanto
+                estes exercem seus ofícios para a câmera. A montagem ligeira
+                ritmada
+                por
+                músicas instrumentais e sons urbanos, assim como uma câmera na
+                mão
+                que
+                acompanha as movimentações corporais em cena, intensificam a
+                experiência
+                de deslocamento e de imersão nesse centro urbano. As
+                experimentações
+                imagéticas fundem as texturas e paisagens da cidade com o corpo
+                dos
+                artistas, em um processo de implicação entre estas pessoas e os
+                lugares
+                à sua volta.
+            </p>
+            <p>
+                Intensificando a musicalidade da sessão, o videoclipe
+                Le_pasSarim.exe
+                (2022, Felipe Vaqueiro Filipe Seabra) da banda Tangolo Mangos,
+                nos
+                apresenta a um grupo de piratas a bordo de seu navio que se veem
+                em
+                conflito com seres não-humanos. Através da animação stop-motion
+                com
+                bonecos lego e pinturas a mão para ilustrar o cenário, a música
+                dita
+                o
+                ritmo frenético da montagem no desenvolvimento desta épica
+                batalha.
+                O
+                percurso turbulento enfrentado pelos piratas reverbera em
+                glitchs
+                tecnológicos e deterioração digital ao mesclar diversas imagens
+                encontradas na internet.
+            </p>
+            <p>
+                Em Desconcerto (2023, Haniel Lucena), uma criança brinca com um
+                carrinho
+                de brinquedo enferrujado. Este brinquedo já foi um dia de seu
+                pai.
+                Seu
+                pai promete consertar o brinquedo quando voltar do trabalho na
+                roça.
+                Em
+                composições belíssimas, a construção visual elabora a vida calma
+                que
+                a
+                família leva no sertão nordestino através da observação das
+                personagens.
+                O caminho percorrido pelo pai é refeito pela menina que sai de
+                casa
+                para
+                lhe entregar o almoço. A apreensão gerada pela montagem e edição
+                de
+                som
+                intensifica o desespero - para os espectadores - diante do que a
+                criança
+                irá encontrar ao fim do caminho.
+            </p>
+            <p>
+                Encerrando a sessão de abertura da Competitiva Bahia, Loci Loci
+                (2023,
+                Kally Nery) aponta para o processo de retornar para a casa como
+                uma
+                possibilidade de cura ancestral.
+                Com imagens das estradas do recôncavo, a narrativa nos apresenta
+                a Jorge
+                (Vinícius Consi) chegando em Cachoeira para visitar sua avó,
+                Dona Maria
+                (Helena Pereira). A contemplação calma permeia a narrativa e
+                influência
+                na composição dos planos ao enquadrar Jorge vislumbrando os
+                lugares da
+                cidade e os cantos da casa. A relação entre o rapaz e sua avó é
+                afetuosa, mas com um certo distanciamento causado pela ausência
+                e
+                colocado em evidência através dos silêncios dos personagens.
+                Estar de
+                volta na casa da avó cria aberturas para Jorge se conectar com a
+                espiritualidade e, com isso, se reaproximar de sua avó.
+            </p>
+            <p>
+                Esta sessão interliga obras audiovisuais que utilizam a energia
+                cinética
+                de movimento para impulsionar suas perspectivas estéticas e
+                políticas em
+                um cinema fluído, que traça seus caminhos no processo mesmo de
+                estar em
+                movimento.
+            </p>
+
+        </div>
+    </div>
+    <div class="container-modal" *ngIf="sessao_numero == 2">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Segunda sessão</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>Em Retomada (2022), dirigido por Brunna Arrais, voltamos ao
+                passado do nosso querido centro de artes, humanidades e letras,
+                ou para os mais chegados, Cahl. O filme guia nossos olhares pela
+                lembrança das paredes coloridas com grafites e pichações, que
+                alegram e dão vida a nosso estimado centro, agora dominado pela
+                tinta branca que esconde essa arte.
+                Não se rendendo ao pessimismo, os personagens do filme enxergam
+                nas paredes brancas a perspectiva de novos futuros, uma tela à
+                espera da tinta para lhe colorir. Como o nome do curta já diz,
+                essa retomada já foi iniciada, as paredes do CAHL já não sofrem
+                de extrema brancura. Por mais que pintem as paredes novamente, a
+                história seguirá sendo preta, e as paredes do CAHL sempre
+                estarão coloridas com a história dos que passam por ali.
+            </p>
+            <p>T de Tubarão (2022), dirigido por Pólen Acácio, rememora a
+                história de algumas pessoas que vivem nos arredores da Praia do
+                Tubarão. É com as memórias de infância dos mais velhos da
+                comunidade que a história se inicia. As pessoas entrevistadas
+                falam com apreço sobre como era a vida naquele local, é possível
+                sentir a ternura em suas palavras, enquanto falam sobre os
+                mangues, a pureza da água, os mariscos que pegavam, os peixes
+                que pescavam. O filme nos traz o passado através do olhar de
+                quem cresceu ali e viu o quanto a sua comunidade tem mudado. E
+                assim nos mostrando que quem constrói um lugar são as pessoas
+                que ali vivem.
+            </p>
+            <p>Não esquece o champagne (2022), dirigido por Vitor Reis, nos
+                conta a história de um feliz casal recém casado que passa sua
+                noite de núpcias no Hotel Colônia, mas eles acabam vivendo uma
+                noite totalmente diferente do esperado. Nas paredes do hotel
+                estão espalhadas pinturas que mostram pessoas negras em posição
+                de serventia a pessoas brancas. O filme denuncia essa herança
+                escravocrata que é bastante viva em nossa sociedade, e mostra
+                como alternativa de um futuro possível a destruição desse mundo
+                que se orgulha de suas raízes criminosas e genocidas. Os
+                personagens certamente estão fartos disso e ao final o champagne
+                que seria para comemorar a união do casal se torna o combustível
+                para a chama que irá se alastrar e acabar com toda ideia de
+                colônia que os donos do hotel insistem em perpetuar.
+            </p>
+            <p>Seresta (2022), dirigido por Duba Rodrigues, é sobre a inusitada
+                doença de dona Anália. Um ritmo envolvente acometeu seu corpo,
+                fazendo assim com que ela não pare de dançar! Os filhos tentam
+                de tudo para curar a “doença” da mãe, mas todos seus esforços
+                são em vão, já que eles não conseguem entender que o que dona
+                Anália precisa é de recuperar um pouco de si mesma. Ela dança
+                sem parar porque por anos de sua vida enquanto criava seus
+                filhos foi se anulando enquanto se preocupava em manter sua
+                família bem. Anália representa várias mães que fazem o mesmo,
+                várias mulheres que devido a rotina do lar tem suas
+                individualidades extirpadas. O tempo todo, através de
+                flashbacks, vemos o passado de Anália, onde ela dança feliz e
+                descontraída. Talvez essa “doença” tenha vindo para lembrá-la
+                dela mesma. E ao final tudo que ela precisava era se reconectar
+                com si mesma, que o ato de dançar deixou de ser uma doença para
+                voltar a ser prazer.
+            </p>
+            <p>Em Vibrações (2022), dirigido por Iraí Iakowsky Barbosa, somos
+                chocados pela realidade violenta que sua família viveu e ainda
+                vive em decorrência da personalidade dominadora de seu pai.
+                Utilizando imagens de arquivo e narração Iraí e seus irmãos
+                relatam as agressões físicas e psicológicas sofridas no ambiente
+                familiar. Na categoria de filme familiar, Vibrações ocupa um
+                lugar singular. Os relatos contados não são para cristalizar a
+                relação familiar como um ambiente seguro e amoroso. Eles são a
+                denúncia de filhos que estão cansados dos abusos de seu pai
+                tóxico. Filhos que entenderam que não precisam mais se calar
+                sobre suas dores. Esse filme traz à tona a característica que o
+                cinema tem de ser usado como uma arma, e sinto que Iraí faz isso
+                com maestria nessa obra, mostrando a importância de romper com o
+                silêncio e se apropriar de sua história.</p>
+            <p>Quando o mar te abraçar novamente (2023), dirigido por Yasoda
+                Nanda, é um filme familiar sobre Arjuna Muni, que é autista e
+                vive uma relação de carinho e cuidado com a sua família. Numa
+                praia, com o som das ondas sobre sua voz, a mãe de Muni
+                compartilha relatos de suas idas à praia com os filhos. Ela diz
+                que como a praia é democrática e que pode acabar sendo um
+                ambiente mais confortável para uma pessoa com deficiência.
+                Através da narração a irmã mais nova de Muni, assim como a
+                diretora do filme, falam sobre ele, e é possível perceber e
+                sentir o afeto em suas falas sobre o irmão. Em toda a sua forma
+                esta obra transmite esse carinho que a família tem por Arjuna
+                Muni, e isso faz com que esse filme emane o amor que eles
+                sentem, deixando quem o assiste com um calor agradável no
+                coração.
+            </p>
+            <p>Essa sessão traz narrativas que falam sobre pertencer em seu
+                território e com as pessoas que nos cercam. Todos os filmes
+                trazem um olhar do passado para imagear um futuro esperançoso e
+                diferente. A existência desses filmes de certa forma já altera o
+                presente, trazendo para mais perto da realidade as perspectivas
+                de futuro que os filmes passam.
+
+            </p>
+        </div>
+    </div>
+
+</ng-template>
+
+<app-footer></app-footer>

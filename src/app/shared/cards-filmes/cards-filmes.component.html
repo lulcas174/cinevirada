@@ -1,0 +1,57 @@
+<div class="container">
+
+  <div class="row">
+    <div *ngFor="let filme of filmesSessao1" class="col-md-6">
+
+      <h3 class="card-title text-center outros-textos-font"
+        style="margin-top: 5%; color: #49233b; font-weight: bold; font-size: 30px;">{{filme.titulo }}</h3>
+
+      <div class="card" style="width: 40%;">
+        <a href="{{filme.link_video}}">
+          <img [src]="filme.poster" class="card-img-top" alt="Imagem do filme">
+        </a>
+        <div class="container-video-realizadore" *ngIf="filme.link_realizadore">
+          <a class="text-center" [href]="filme.link_realizadore"
+            class="outros-textos-font video-realizadore mb-2">
+            Clique e veja o video realizadore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let filme of filmesSessao2" class="col-md-6">
+      <h3 class="card-title text-center outros-textos-font"
+        style="margin-top: 5%; color: #49233b; font-weight: bold; font-size: 30px;">{{filme.titulo }}</h3>
+
+      <div class="card" style="width: 40%;">
+        <a href="{{filme.link_video}}" >
+          <img [src]="filme.poster" class="card-img-top" alt="Imagem do filme">
+        </a>
+        <div class="container-video-realizadore" *ngIf="filme.link_realizadore">
+          <a class="text-center" [href]="filme.link_realizadore"
+            class="outros-textos-font video-realizadore mb-2">
+            Clique e veja o video realizadore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div *ngFor="let filme of filmesSessao3" class="col-md-6">
+      <h3 class="card-title text-center outros-textos-font"
+        style="margin-top: 5%; color: #49233b; font-weight: bold; font-size: 30px;">{{filme.titulo }}</h3>
+
+      <div class="card" style="width: 40%;">
+        <a href="{{filme.link_video}}">
+          <img [src]="filme.poster" class="card-img-top" alt="Imagem do filme">
+        </a>
+        <div class="container-video-realizadore">
+          <a class="text-center" [href]="filme.link_realizadore"
+            class="outros-textos-font video-realizadore mb-2">
+            Clique e veja o video realizadore</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

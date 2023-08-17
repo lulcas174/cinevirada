@@ -10,7 +10,7 @@ import { LayoutComponent } from './layout/layout.component';
   declarations: [
     AppComponent,
     LayoutComponent,
-  ],
+    ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

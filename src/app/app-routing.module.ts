@@ -4,6 +4,9 @@ import { AppComponent } from './app.component';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { LayoutComponent } from './layout/layout.component';
 import { ListaPessoasCreditoComponent } from './other-pages/lista-pessoas-credito/lista-pessoas-credito.component';
+import { CompetitivaNordesteComponent } from './other-pages/competitiva-nordeste/competitiva-nordeste.component';
+import { CompetitivaBahiaComponent } from './other-pages/competitiva-bahia/competitiva-bahia.component';
+import { CineviradinhaComponent } from './other-pages/cineviradinha/cineviradinha.component';
 
 
 const routes: Routes = [
@@ -25,7 +28,20 @@ const routes: Routes = [
   {
     path: 'equipe',
     component: ListaPessoasCreditoComponent
-  }
+  },
+  {
+    path: 'competitiva-nordeste',
+    component: CompetitivaNordesteComponent
+  },
+  {
+    path: 'competitiva-bahia',
+    component: CompetitivaBahiaComponent
+  },
+  {
+    path: 'cineviradinha',
+    component: CineviradinhaComponent
+  },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

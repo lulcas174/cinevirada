@@ -7,14 +7,20 @@
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Rubik:ital,wght@1,300&display=swap');
+
 body{
     font-style: normal;
-    font-family: 'Signika Negative', sans-serif;
     line-height: 1.5;
     font-weight: 400;
     position: relative;
     height: 100%;
+}
+.titulos-font {
+    font-family: 'El Messiri', sans-serif;
+}
+.outros-textos-font {
+    font-family: 'Rubik', sans-serif;
 }
 body.active-body {
     background-color: #ccc; /* Cor cinza para o fundo */

@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-color: transparent !important;
+    border: none !important;
+    img {
+        border-radius: 10px;
+    }
+}
+.card-img-top {
+    margin-top:20px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.container-video-realizadore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .video-realizadore {
+        font-weight: bold;
+        font-size: 20px;
+        color: #49233b;
+    }
+}

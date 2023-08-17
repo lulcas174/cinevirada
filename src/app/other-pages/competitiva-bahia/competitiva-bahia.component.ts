@@ -44,7 +44,7 @@ export class CompetitivaBahiaComponent {
       poster: 'assets/image-bahia/sessao-1/La passin sla.png',
     },
     {
-      titulo: 'Desconcerto (2023)',
+      titulo: 'Desconserto (2023)',
       link_video: "https://youtu.be/eeUjO5yHrEo",
       link_realizadore: '/competitiva-bahia',
       poster: 'assets/image-bahia/sessao-1/DESCONSERTO - Haniel Lucena.png',

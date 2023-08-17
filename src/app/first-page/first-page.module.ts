@@ -13,6 +13,7 @@ import { FirstPageRoutingModule } from './first-page-routing.module';
 import { FirstPageComponent } from './first-page.component';
 import { ProgramacaoComponent } from './programacao/programacao.component';
 import { TeaserComponent } from './teaser/teaser.component';
+import { DebateComponent } from './debate/debate.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { TeaserComponent } from './teaser/teaser.component';
     ProgramacaoComponent,
     CreditosComponent,
     FaixaSessaoComponent,
+    DebateComponent,
   ],
   imports: [
     FirstPageRoutingModule,

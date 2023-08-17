@@ -131,7 +131,12 @@
 
                 </p>
             </div>
-
+            <div class="container-buton-modal mb-3">
+                <button class="btn btn-outline-secondary botao-customizavel"
+                    (click)="openModal(template, 3)">
+                    Ver mais
+                </button>
+            </div>
         </div>
     </div>
 </div>
@@ -444,6 +449,117 @@
                 presente, trazendo para mais perto da realidade as perspectivas
                 de futuro que os filmes passam.
 
+            </p>
+        </div>
+    </div>
+    <div class="container-modal" *ngIf="sessao_numero == 3">
+        <div class="modal-header">
+            <h4 class="modal-title pull-left">Terceira sessão</h4>
+            <button type="button" class="btn-close close pull-right"
+                aria-label="Close" (click)="modalRef?.hide()">
+                <span aria-hidden="true" class="visually-hidden">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <p>O primeiro filme desta sessão, daqui pra li, de lá pra cá (2022,
+                wellison silva), elabora como dispositivo para sua construção
+                narrativa o percurso percorrido por Milla Langídíla entre as
+                cidades irmãs de Cachoeira e São Félix (BA). O caminhar sob a
+                ponte de ferro que liga as duas cidades marca a paisagem do
+                trajeto realizado por Welisson e Milla, onde a personagem
+                compartilha de suas vivências morando em São Félix e
+                trabalhando/estudando em Cachoeira. Atravessar a ponte não
+                significa apenas ir para outra cidade, mas contemplar o rio
+                Paraguassu que liga as duas cidades. E esse trânsito entre estas
+                duas pessoas mobiliza não somente a experiência individual da
+                entrevistada, mas a pluralidade dessa experiência entre pessoas
+                que habitam esses territórios. Alternando entre imagens
+                estáticas da ponte e uma câmera na mão que registra o percurso
+                de Milla, a montagem reúne uma série de sonoridades urbanas e
+                sons que se atravessam nesse trajeto: o soprar do vento, a
+                calmaria das águas, os rangidos estridentes da ponte de ferro,
+                os passos das pessoas. Ao propor um dispositivo de conversa que
+                se dá durante o trajeto de travessia da ponte, Welisson se
+                coloca também enquanto personagem de sua narrativa, com sua voz
+                constantemente indagando e reagindo aos relatos de Milla. O
+                essencial da conversa entre Milla e Welisson não é exatamente o
+                lugar que se vai chegar ao fim do caminho, mas o próprio
+                caminhar enquanto constituição da linguagem fílmica.
+            </p>
+            <p>Em Caminhos que levam a moça da reforma (2023, Ailana Rocha),
+                somos apresentados à história de Iasmin Santana, moradora da
+                cidade de Cachoeira. Iasmin relata os conflitos e dificuldades
+                que enfrenta na profissão de “faz-tudo”, considerada pela
+                sociedade como um “trabalho de homem”. Em sua caminhada, Iasmin
+                enfrentou situações machistas para realizar sua profissão, mas
+                encontrou forças espirituais que lhe possibilitaram continuar
+                trilhando seu caminho. Devota ao orixá Exú, conhecido como orixá
+                da comunicação e da abertura de caminhos, Iasmin se dedica a
+                atender o público formado por mulheres e LGBTs nas cidades do
+                Recôncavo e agora é conhecida popularmente como “Moça da
+                reforma”. A narrativa do documentário é construída
+                principalmente na entrevista com a Iasmin, onde a câmera
+                permanece fixa e a montagem utiliza poucas variações de imagens.
+                Apesar da movimentação e do caminhar que sugere o título, a obra
+                acaba utilizando uma linguagem mais fixa e inerte do cinema
+                documental clássico.
+            </p>
+            <p>Percorrendo os espaços urbanos de Salvador/BA, o curta-metragem
+                Rema (2023, Gabriela Ferrari) aborda a perspectiva dos artistas
+                urbanos que vivem de sua arte nas ruas da cidade. Através de uma
+                personagem skatista como dispositivo de movimentação e ligação
+                entre os diversos pontos da cidade, a narrativa tece uma
+                cartografia de diferentes práticas artísticas: malabarismo,
+                performance com bambolê, grafite e artes visuais. Com
+                entrevistas em off, o filme nos apresenta as vozes de cada
+                pessoa contando as dores e as delícias de fazer arte de rua
+                enquanto estes exercem seus ofícios para a câmera. A montagem
+                ligeira ritmada por músicas instrumentais e sons urbanos, assim
+                como uma câmera na mão que acompanha as movimentações corporais
+                em cena, intensificam a experiência de deslocamento e de imersão
+                nesse centro urbano. As experimentações imagéticas fundem as
+                texturas e paisagens da cidade com o corpo dos artistas, em um
+                processo de implicação entre estas pessoas e os lugares à sua
+                volta.
+            </p>
+            <p>Intensificando a musicalidade da sessão, o videoclipe
+                Le_pasSarim.exe (2022, Felipe Vaqueiro Filipe Seabra) da banda
+                Tangolo Mangos, nos apresenta a um grupo de piratas a bordo de
+                seu navio que se veem em conflito com seres não-humanos. Através
+                da animação stop-motion com bonecos lego e pinturas a mão para
+                ilustrar o cenário, a música dita o ritmo frenético da montagem
+                no desenvolvimento desta épica batalha. O percurso turbulento
+                enfrentado pelos piratas reverbera em glitchs tecnológicos e
+                deterioração digital ao mesclar diversas imagens encontradas na
+                internet.</p>
+            <p>Em Desconserto (2023, Haniel Lucena), uma criança brinca com um
+                carrinho de brinquedo enferrujado. Este brinquedo já foi um dia
+                de seu pai. Seu pai promete consertar o brinquedo quando voltar
+                do trabalho na roça. Em composições belíssimas, a construção
+                visual elabora a vida calma que a família leva no sertão
+                nordestino através da observação das personagens. O caminho
+                percorrido pelo pai é refeito pela menina que sai de casa para
+                lhe entregar o almoço. A apreensão gerada pela montagem e edição
+                de som intensifica o desespero - para os espectadores - diante
+                do que a criança irá encontrar ao fim do caminho. </p>
+            <p>Encerrando a sessão de abertura da Competitiva Bahia, Loci Loci
+                (2023, Kally Nery) aponta para o processo de retornar para a
+                casa como uma possibilidade de cura ancestral.
+                Com imagens das estradas do recôncavo, a narrativa nos apresenta
+                a Jorge (Vinícius Consi) chegando em Cachoeira para visitar sua
+                avó, Dona Maria (Helena Pereira). A contemplação calma permeia a
+                narrativa e influência na composição dos planos ao enquadrar
+                Jorge vislumbrando os lugares da cidade e os cantos da casa. A
+                relação entre o rapaz e sua avó é afetuosa, mas com um certo
+                distanciamento causado pela ausência e colocado em evidência
+                através dos silêncios dos personagens. Estar de volta na casa da
+                avó cria aberturas para Jorge se conectar com a espiritualidade
+                e, com isso, se reaproximar de sua avó.
+            </p>
+            <p>Esta sessão interliga obras audiovisuais que utilizam a energia
+                cinética de movimento para impulsionar suas perspectivas
+                estéticas e políticas em um cinema fluído, que traça seus
+                caminhos no processo mesmo de estar em movimento.
             </p>
         </div>
     </div>
